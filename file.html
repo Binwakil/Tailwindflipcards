@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Cards Section</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      background-color: #f7f7f7;
+    }
+    
+    .card-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .card {
+      width: 23%;
+      margin: 10px;
+      padding: 50px;
+      background-color: #fff;
+      border: 1px solid #e0cece;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card .icon {
+      font-size: 48px;
+      width: 100px;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+
+    
+    .card .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .card .detail {
+      font-size: 16px;
+      color: #666;
+    }
+  
+   
+  </style>
+</head>
+<body>
+  <div class="card-section">
+    <div class="card">
+        <img class="icon" src="images/key.png"/>
+      <div class="title">Security</div>
+      <div class="detail">We ensure Cyber Security and your safety every day,.</div>
+    </div>
+    <div class="card">
+      <img class="icon" src="images/sustain.png"/>
+      <div class="title">Sustainability</div>
+      <div class="detail">The energy of our servers comes 100% from hydropower,.</div>
+    </div>
+    <div class="card">
+        <img class="icon" src="images/user.png"/>
+      <div class="title">Origin</div>
+      <div class="detail">Regional Origin with Made in Germany!,.</div>
+    </div>
+    <div class="card">
+      <img class="icon" src="images/protec.png"/>
+      <div class="title">Data Protection</div>
+      <div class="detail">GDPR Compliant Your data stays private and secure with us!,.</div>
+    </div>
+  </div>
+  
+  <!-- Include Font Awesome library -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
